@@ -40,6 +40,8 @@ const ColorList = ({ colors, updateColors }) => {
     axiosWithAuth().delete(`/api/colors/${colors.id}`)
       .then(response => {
         console.log(response)
+
+        
         
       })
       .catch(error => {
