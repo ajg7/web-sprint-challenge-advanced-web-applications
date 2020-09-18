@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import Bubbles from "./Bubbles";
+import BubblePage from "./BubblePage";
 import { fetchColorsTest } from "../api_tests/fetchColorsTest";
 
 jest.mock("../api_tests/fetchColorsTest")
@@ -85,7 +86,7 @@ const colorData = [
   }
 ];
 
-test("Fetches data and renders the bubbles", async () => {
+test("Fetches data", () => {
   // Finish this test
     fetchColorsTest.mockResolvedValue(colorData);
 
